@@ -28,32 +28,34 @@
 </head>
 
 <body>
-  <!-- Header: site identity and primary navigation -->
   <header>
-    <nav>
-      <ul class="nav">
-        <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Contact</a></li>
-      </ul>
-    </nav>
+    <h1 class="title">Calculator</h1>
   </header>
 
-  <!-- Main: the page's primary content landmark -->
   <main>
-    <!-- Intro: the single <h1> for the page lives here -->
-    <section>
-      <h1>Your page heading here!</h1>
-    </section>
-
-    <!-- A themed block. -->
-    <section>
-      <h2>Section title</h2>
-      <p>Replace with your content.</p>
-    </section>
+    <output id="display"></output>
+    <div id="keypad">
+      <button class="area-clr" type="button" data-type="action" data-value="clear">Clr</button>
+      <button class="area-del" type="button" data-type="action" data-value="delete">Del</button>
+      <button class="area-eql" type="button" data-type="action" data-value="equal">=</button>
+      <button class="area-0" type="button" data-type="digit" data-value="0">0</button>
+      <button class="area-1" type="button" data-type="digit" data-value="1">1</button>
+      <button class="area-2" type="button" data-type="digit" data-value="2">2</button>
+      <button class="area-3" type="button" data-type="digit" data-value="3">3</button>
+      <button class="area-4" type="button" data-type="digit" data-value="4">4</button>
+      <button class="area-5" type="button" data-type="digit" data-value="5">5</button>
+      <button class="area-6" type="button" data-type="digit" data-value="6">6</button>
+      <button class="area-7" type="button" data-type="digit" data-value="7">7</button>
+      <button class="area-8" type="button" data-type="digit" data-value="8">8</button>
+      <button class="area-9" type="button" data-type="digit" data-value="9">9</button>
+      <button class="area-dot" type="button" data-type="digit" data-value=".">.</button>
+      <button class="area-add" type="button" data-type="operator" data-value="+">+</button>
+      <button class="area-sub" type="button" data-type="operator" data-value="-">-</button>
+      <button class="area-mul" type="button" data-type="operator" data-value="*">×</button>
+      <button class="area-div" type="button" data-type="operator" data-value="/">÷</button>
+    </div>
   </main>
 
-  <!-- Footer: site-level information -->
   <footer>
     <p>&copy; <time datetime="2026">2026</time> Singularwind</p>
   </footer>
